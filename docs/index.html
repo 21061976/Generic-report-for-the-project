@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דוח ניהול סיכונים - פרויקט חינוכי</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #1a5276;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1a5276;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #85c1e9;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        .summary-box {
+            background-color: #f1f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-right: 5px solid #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: right;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .risk-high {
+            background-color: #fadbd8;
+        }
+        .risk-medium {
+            background-color: #fef9e7;
+        }
+        .risk-low {
+            background-color: #eafaf1;
+        }
+        .column {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        .editor {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px dashed #ccc;
+            min-height: 40px;
+        }
+        .header-logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header-logo img {
+            max-height: 80px;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+        @media print {
+            body {
+                font-size: 12pt;
+            }
+            h1 {
+                font-size: 18pt;
+            }
+            h2 {
+                font-size: 16pt;
+            }
+            h3 {
+                font-size: 14pt;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-logo">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iODAiIGZpbGw9IiNmOGY5ZmEiIHJ4PSI4Ii8+PHRleHQgeD0iMTAwIiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNmM3NTdkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5bלוגו הארגון]</text+></svg>" alt="לוגו ארגון">
+    </div>
+
+    <h1>דוח ניהול סיכונים - <span class="editor" contenteditable="true">[שם הפרויקט]</span></h1>
+    
+    <section class="summary-box">
+        <h2>תקציר מנהלים</h2>
+        <div class="editor" contenteditable="true">
+            [כתוב כאן תיאור קצר של הפרויקט, הסיכונים המרכזיים, רמת החדשנות והאסטרטגיות המרכזיות להתמודדות עם הסיכונים. יש לסכם את המסקנות וההמלצות העיקריות.]
+        </div>
+    </section>
+
+    <section>
+        <h2>1. פרטי הפרויקט</h2>
+        <table>
+            <tr>
+                <td width="30%"><strong>שם הפרויקט:</strong></td>
+                <td><div class="editor" contenteditable="true">[שם הפרויקט]</div></td>
+            </tr>
+            <tr>
+                <td><strong>מנהל/ת הפרויקט:</strong></td>
+                <td><div class="editor" contenteditable="true">[שם מנהל/ת הפרויקט]</div></td>
+            </tr>
+            <tr>
+                <td><strong>ארגון:</strong></td>
+                <td><div class="editor" contenteditable="true">[שם הארגון]</div></td>
+            </tr>
+            <tr>
+                <td><strong>תאריך התחלה:</strong></td>
+                <td><div class="editor" contenteditable="true">[תאריך]</div></td>
+            </tr>
+            <tr>
+                <td><strong>תאריך סיום צפוי:</strong></td>
+                <td><div class="editor" contenteditable="true">[תאריך]</div></td>
+            </tr>
+            <tr>
+                <td><strong>מטרת הפרויקט:</strong></td>
+                <td><div class="editor" contenteditable="true">[תיאור קצר של מטרת הפרויקט]</div></td>
+            </tr>
+        </table>
+
+        <h3>תיאור הפרויקט</h3>
+        <div class="editor" contenteditable="true">
+            [תאר את הפרויקט החינוכי, את הרציונל שלו, את החדשנות שבו ואת הסביבה בה יפעל. בסעיף זה ניתן לתאר גם את בעלי העניין המרכזיים.]
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>2. ניהול סיכונים</h2>
+        <h3>זיהוי סיכונים והערכתם</h3>
+        <p>
+            רמות הסיכון מחושבות לפי מכפלת הסתברות (1-10) בעוצמת נזק (1-10):<br>
+            גבוה: 65-100 | בינוני: 21-64 | נמוך: 1-20
+        </p>
+        
+        <table id="risk-table">
+            <tr>
+                <th style="width: 5%">מס'</th>
+                <th style="width: 15%">קטגוריה</th>
+                <th style="width: 30%">תיאור הסיכון</th>
+                <th style="width: 10%">הסתברות<br>(1-10)</th>
+                <th style="width: 10%">עוצמת נזק<br>(1-10)</th>
+                <th style="width: 10%">חומרה</th>
+                <th style="width: 20%">אסטרטגיית טיפול</th>
+            </tr>
+            <tr class="risk-row">
+                <td>1</td>
+                <td><div class="editor" contenteditable="true">[קטגוריה]</div></td>
+                <td><div class="editor" contenteditable="true">[תיאור הסיכון]</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td class="severity">25</td>
+                <td><div class="editor" contenteditable="true">[אסטרטגיה]</div></td>
+            </tr>
+            <tr class="risk-row">
+                <td>2</td>
+                <td><div class="editor" contenteditable="true">[קטגוריה]</div></td>
+                <td><div class="editor" contenteditable="true">[תיאור הסיכון]</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td class="severity">25</td>
+                <td><div class="editor" contenteditable="true">[אסטרטגיה]</div></td>
+            </tr>
+            <tr class="risk-row">
+                <td>3</td>
+                <td><div class="editor" contenteditable="true">[קטגוריה]</div></td>
+                <td><div class="editor" contenteditable="true">[תיאור הסיכון]</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td class="severity">25</td>
+                <td><div class="editor" contenteditable="true">[אסטרטגיה]</div></td>
+            </tr>
+            <tr class="risk-row">
+                <td>4</td>
+                <td><div class="editor" contenteditable="true">[קטגוריה]</div></td>
+                <td><div class="editor" contenteditable="true">[תיאור הסיכון]</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td class="severity">25</td>
+                <td><div class="editor" contenteditable="true">[אסטרטגיה]</div></td>
+            </tr>
+            <tr class="risk-row">
+                <td>5</td>
+                <td><div class="editor" contenteditable="true">[קטגוריה]</div></td>
+                <td><div class="editor" contenteditable="true">[תיאור הסיכון]</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td class="severity">25</td>
+                <td><div class="editor" contenteditable="true">[אסטרטגיה]</div></td>
+            </tr>
+        </table>
+        
+        <button id="add-risk-row" style="padding: 5px 10px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 5px;">הוסף שורה</button>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>3. אסטרטגיות להתמודדות עם סיכונים</h2>
+        
+        <div class="column">
+            <h3>אסטרטגיית מניעה</h3>
+            <p>פעולות למניעת התרחשות הסיכון או להפחתת הסבירות להתרחשותו:</p>
+            <div class="editor" contenteditable="true">
+                <ul>
+                    <li>[פעולת מניעה 1]</li>
+                    <li>[פעולת מניעה 2]</li>
+                    <li>[פעולת מניעה 3]</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="column">
+            <h3>אסטרטגיית הפחתה</h3>
+            <p>פעולות להקטנת הנזק אם הסיכון יתממש:</p>
+            <div class="editor" contenteditable="true">
+                <ul>
+                    <li>[פעולת הפחתה 1]</li>
+                    <li>[פעולת הפחתה 2]</li>
+                    <li>[פעולת הפחתה 3]</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="column">
+            <h3>תכנית חירום</h3>
+            <p>תכניות למקרה שהסיכון יתממש:</p>
+            <div class="editor" contenteditable="true">
+                <ul>
+                    <li>[תכנית חירום 1]</li>
+                    <li>[תכנית חירום 2]</li>
+                    <li>[תכנית חירום 3]</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>אחריות ומעקב</h3>
+        <table>
+            <tr>
+                <th style="width: 40%">תחום אחריות</th>
+                <th style="width: 30%">אחראי</th>
+                <th style="width: 30%">תדירות מעקב</th>
+            </tr>
+            <tr>
+                <td><div class="editor" contenteditable="true">[תחום אחריות 1]</div></td>
+                <td><div class="editor" contenteditable="true">[שם האחראי]</div></td>
+                <td><div class="editor" contenteditable="true">[תדירות]</div></td>
+            </tr>
+            <tr>
+                <td><div class="editor" contenteditable="true">[תחום אחריות 2]</div></td>
+                <td><div class="editor" contenteditable="true">[שם האחראי]</div></td>
+                <td><div class="editor" contenteditable="true">[תדירות]</div></td>
+            </tr>
+            <tr>
+                <td><div class="editor" contenteditable="true">[תחום אחריות 3]</div></td>
+                <td><div class="editor" contenteditable="true">[שם האחראי]</div></td>
+                <td><div class="editor" contenteditable="true">[תדירות]</div></td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>4. אסדרת חדשנות</h2>
+        
+        <h3>הערכת רמת החדשנות</h3>
+        <table>
+            <tr>
+                <th style="width: 40%">מרכיב החדשנות</th>
+                <th style="width: 15%">דירוג (1-5)</th>
+                <th style="width: 45%">הנמקה</th>
+            </tr>
+            <tr>
+                <td>שינוי תפיסתי/פדגוגי</td>
+                <td><div class="editor" contenteditable="true" oninput="updateInnovation()">3</div></td>
+                <td><div class="editor" contenteditable="true">[הנמקה]</div></td>
+            </tr>
+            <tr>
+                <td>שילוב טכנולוגיות חדשניות</td>
+                <td><div class="editor" contenteditable="true" oninput="updateInnovation()">3</div></td>
+                <td><div class="editor" contenteditable="true">[הנמקה]</div></td>
+            </tr>
+            <tr>
+                <td>שינויים בסביבת הלמידה</td>
+                <td><div class="editor" contenteditable="true" oninput="updateInnovation()">3</div></td>
+                <td><div class="editor" contenteditable="true">[הנמקה]</div></td>
+            </tr>
+            <tr>
+                <td>שינויים בתפקיד המחנך/מורה</td>
+                <td><div class="editor" contenteditable="true" oninput="updateInnovation()">3</div></td>
+                <td><div class="editor" contenteditable="true">[הנמקה]</div></td>
+            </tr>
+            <tr>
+                <td>שותפות קהילתית</td>
+                <td><div class="editor" contenteditable="true" oninput="updateInnovation()">3</div></td>
+                <td><div class="editor" contenteditable="true">[הנמקה]</div></td>
+            </tr>
+            <tr>
+                <th>סה"כ ניקוד:</th>
+                <th><span id="innovation-score">15</span>/25</th>
+                <th>רמת חדשנות: <span id="innovation-level">בינונית</span></th>
+            </tr>
+        </table>
+        
+        <h3>התאמה לדרישות האסדרה</h3>
+        <table>
+            <tr>
+                <th style="width: 35%">נושא</th>
+                <th style="width: 50%">התייחסות בפרויקט</th>
+                <th style="width: 15%">רמת התאמה</th>
+            </tr>
+            <tr>
+                <td>הגנה על פרטיות התלמידים והצוות</td>
+                <td><div class="editor" contenteditable="true">[תיאור ההתייחסות]</div></td>
+                <td>
+                    <select>
+                        <option>גבוהה</option>
+                        <option selected>בינונית</option>
+                        <option>נמוכה</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>שמירה על רווחת התלמידים והצוות</td>
+                <td><div class="editor" contenteditable="true">[תיאור ההתייחסות]</div></td>
+                <td>
+                    <select>
+                        <option>גבוהה</option>
+                        <option selected>בינונית</option>
+                        <option>נמוכה</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>התאמה לערכי החינוך הציבורי</td>
+                <td><div class="editor" contenteditable="true">[תיאור ההתייחסות]</div></td>
+                <td>
+                    <select>
+                        <option>גבוהה</option>
+                        <option selected>בינונית</option>
+                        <option>נמוכה</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>עמידה בדרישות אבטחת מידע</td>
+                <td><div class="editor" contenteditable="true">[תיאור ההתייחסות]</div></td>
+                <td>
+                    <select>
+                        <option>גבוהה</option>
+                        <option selected>בינונית</option>
+                        <option>נמוכה</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>נגישות והכלה</td>
+                <td><div class="editor" contenteditable="true">[תיאור ההתייחסות]</div></td>
+                <td>
+                    <select>
+                        <option>גבוהה</option>
+                        <option selected>בינונית</option>
+                        <option>נמוכה</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+        <h2>5. תוצאות והמלצות</h2>
+        
+        <h3>תוצאות צפויות</h3>
+        <div class="column">
+            <h4>טווח קצר (1-2 שנים)</h4>
+            <div class="editor" contenteditable="true">
+                <ul>
+                    <li>[תוצאה 1]</li>
+                    <li>[תוצאה 2]</li>
+                    <li>[תוצאה 3]</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="column">
+            <h4>טווח ארוך (3+ שנים)</h4>
+            <div class="editor" contenteditable="true">
+                <ul>
+                    <li>[תוצאה 1]</li>
+                    <li>[תוצאה 2]</li>
+                    <li>[תוצאה 3]</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>המלצות</h3>
+        <div class="editor" contenteditable="true">
+            <ol>
+                <li>[המלצה 1]</li>
+                <li>[המלצה 2]</li>
+                <li>[המלצה 3]</li>
+                <li>[המלצה 4]</li>
+                <li>[המלצה 5]</li>
+            </ol>
+        </div>
+        
+        <h3>סיכום</h3>
+        <div class="editor" contenteditable="true">
+            [סיכום של הדוח, כולל התייחסות להערכת הסיכונים הכללית, רמת החדשנות והתאמתה לדרישות האסדרה, והמלצות להמשך.]
+        </div>
+    </section>
+    
+    <div class="footer">
+        <p>דוח זה הוכן ע"י: <span class="editor" contenteditable="true">[שם המחבר/צוות]</span></p>
+        <p>תאריך: <span class="editor" contenteditable="true">[תאריך]</span></p>
+    </div>
+    
+    <script>
+        // חישוב דרגת חומרה ועדכון הצבע של השורה
+        function calculateSeverity(element) {
+            const row = element.closest('.risk-row');
+            const probabilityCell = row.querySelector('td:nth-child(4) .editor');
+            const impactCell = row.querySelector('td:nth-child(5) .editor');
+            const severityCell = row.querySelector('td:nth-child(6)');
+            
+            const probability = parseInt(probabilityCell.textContent) || 0;
+            const impact = parseInt(impactCell.textContent) || 0;
+            const severity = probability * impact;
+            
+            severityCell.textContent = severity;
+            
+            // עדכון צבע הרקע
+            row.classList.remove('risk-high', 'risk-medium', 'risk-low');
+            if (severity >= 65) {
+                row.classList.add('risk-high');
+            } else if (severity >= 21) {
+                row.classList.add('risk-medium');
+            } else {
+                row.classList.add('risk-low');
+            }
+        }
+        
+        // הוספת שורת סיכון חדשה
+        document.getElementById('add-risk-row').addEventListener('click', function() {
+            const riskTable = document.getElementById('risk-table');
+            const rows = riskTable.querySelectorAll('.risk-row');
+            const newRowNumber = rows.length + 1;
+            
+            const newRow = document.createElement('tr');
+            newRow.className = 'risk-row';
+            
+            newRow.innerHTML = `
+                <td>${newRowNumber}</td>
+                <td><div class="editor" contenteditable="true">[קטגוריה]</div></td>
+                <td><div class="editor" contenteditable="true">[תיאור הסיכון]</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td><div class="editor" contenteditable="true" oninput="calculateSeverity(this)">5</div></td>
+                <td class="severity">25</td>
+                <td><div class="editor" contenteditable="true">[אסטרטגיה]</div></td>
+            `;
+            
+            riskTable.appendChild(newRow);
+            calculateSeverity(newRow.querySelector('.editor'));
+        });
+        
+        // עדכון ציון החדשנות
+        function updateInnovation() {
+            const rows = document.querySelectorAll('table tr td:nth-child(2) .editor');
+            let total = 0;
+            
+            rows.forEach(cell => {
+                const value = parseInt(cell.textContent) || 0;
+                if (value >= 0 && value <= 5) {
+                    total += value;
+                }
+            });
+            
+            document.getElementById('innovation-score').textContent = total;
+            
+            let level;
+            if (total >= 17) {
+                level = 'גבוהה';
+            } else if (total >= 9) {
+                level = 'בינונית';
+            } else {
+                level = 'נמוכה';
+            }
+            
+            document.getElementById('innovation-level').textContent = level;
+        }
+        
+        // אתחול הטבלאות
+        window.onload = function() {
+            const riskRows = document.querySelectorAll('.risk-row');
+            riskRows.forEach(row => {
+                calculateSeverity(row.querySelector('.editor'));
+            });
+            
+            updateInnovation();
+        };
+    </script>
+</body>
+</html>
